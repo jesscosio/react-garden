@@ -15,13 +15,14 @@ class Nav extends React.Component {
     }
   renderedTabs = this.props.tabs.map( tab => {
     return (
-      <Link
+      <div className="nav-item">
+        <Link
         key={tab.value}
         to={tab.path}
-        className={`${tab.value === this.props.tab.value ? "active" : ""} item`}
-      >
+        className={`${tab.value === this.props.tab.value ? "active" : ""} nav-link`}>
         {tab.name} 
       </Link>
+      </div>
     );
   });
 
@@ -29,8 +30,14 @@ class Nav extends React.Component {
       if(!this.props.tabs) {
           return <div>Loading...</div>;
       }
-    return <div style={{backgroundColor:'#DADED4',paddingTop:'10px', fontFamily: 'Raleway, cursive'}} 
-    className="ui top attached tabular menu">{this.renderedTabs}</div>;
+    // return <div style={{backgroundColor:'#DADED4',paddingTop:'10px', fontFamily: 'Raleway, cursive'}} 
+    // className="ui top attached tabular menu">{this.renderedTabs}</div>;
+    return (
+      <ul className="nav">
+        {this.renderedTabs}
+      </ul>
+    );
+
   }
 };
 
