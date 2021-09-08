@@ -17,7 +17,7 @@ class App extends React.Component {
   render() {
     return (
         <Router history={history}>
-        <Header path="/" imageSrc={logo} headerText="The Daffodil Mill" />
+        <Header path="/" imageSrc={logo} headerText="Daffodil Mill" />
           <Route path="/" exact component={HomePage} />
           <Route path="/gallery" exact component={GalleryPage} />
           <Route path="/blog" exact component={BlogPage} />

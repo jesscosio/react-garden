@@ -20,10 +20,10 @@ const Header = (props) => {
   };
 
   return (
-  <header className="d-flex flex-wrap justify-content-center py-3 border-bottom" style={{ fontFamily:"Raleway, serif", width:'100vw'}}>
+  <header className="d-flex flex-wrap justify-content-center border-bottom" style={{ fontFamily:"Raleway, serif", width:'100vw'}}>
       <GoogleAuth />
-      <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-      <img style={{alignContent:'center',height:'40px', width:'32px'}} alt="logo" src={props.imageSrc} className="ui circular image" />
+      <a href="/" className="d-flex align-items-center mb-3 pt-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <img style={{alignContent:'center',height:'40px', width:'32px', margin:'5px'}} alt="logo" src={props.imageSrc} />
         <span className="fs-4">{props.headerText}</span>
       </a>
        {/* { renderRain() } */}
