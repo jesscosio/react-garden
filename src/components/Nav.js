@@ -8,6 +8,7 @@ import React from "react";
 import { SelectActiveTab } from '../actions';
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
+import "../styles/app.css";
 
 class Nav extends React.Component {
     componentDidMount() {
@@ -15,14 +16,14 @@ class Nav extends React.Component {
     }
   renderedTabs = this.props.tabs.map( tab => {
     return (
-      <div className="nav-item">
+      <li className="nav-item">
         <Link
         key={tab.value}
         to={tab.path}
         className={`${tab.value === this.props.tab.value ? "active" : ""} nav-link`}>
         {tab.name} 
       </Link>
-      </div>
+      </li>
     );
   });
 
@@ -33,9 +34,18 @@ class Nav extends React.Component {
     // return <div style={{backgroundColor:'#DADED4',paddingTop:'10px', fontFamily: 'Raleway, cursive'}} 
     // className="ui top attached tabular menu">{this.renderedTabs}</div>;
     return (
-      <ul className="nav">
-        {this.renderedTabs}
-      </ul>
+      <nav class="navbar navbar-expand-md navbar-light bg-light ">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            {this.renderedTabs}
+          </ul>
+        </div>
+      </div>
+    </nav>
     );
 
   }

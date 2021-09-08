@@ -43,7 +43,7 @@ class GoogleAuth extends React.Component {
        }
     }
     render() {
-        return <div style={{position:"absolute", right:0}} >{this.renderAuthButton()}</div>;
+        return <div style={{position:"absolute", right:'10px'}} >{this.renderAuthButton()}</div>;
     }
 };
 
