@@ -21,9 +21,8 @@ class Nav extends React.Component {
 
   renderedTabs = this.props.tabs.map((tab) => {
     return (
-      <li className="nav-item">
+      <li className="nav-item" key={tab.value}>
         <Link
-          key={tab.value}
           to={tab.path}
           className={`${
             tab.value === this.props.tab.value ? "active" : ""
