@@ -13,13 +13,11 @@ const HomePage = props => {
                 
                     
                 </div>
-                <div className="ui content" style={{position:"relative"}}>
-                <img alt="The Garden Bee" style={{width:'100vw'}} src={moss} />
-                <div style={{position:'absolute',bottom:"40px", width:'60%',
-                fontFamily:'Raleway, serif', fontSize: '2em',backgroundColor:'orange',
-                 zIndex:'9', opacity:'80%'}}>The Garden Bee</div>
-                        
-               
+                <div  style={{position:"relative"}}>
+                    <img alt="The Garden Bee" style={{width:'100vw'}} src={moss} />
+                    <div style={{position:'absolute', bottom:'30%', width:'70%',
+                    fontFamily:'Raleway, serif', fontSize: '2em',backgroundColor:'orange',
+                    zIndex:'9', opacity:'80%'}}>The Garden Bee </div>
                 </div>
         </div>
     );

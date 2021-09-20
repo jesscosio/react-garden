@@ -4,8 +4,8 @@ import daffodilBorder from '../assets/daffodilborder.jpg';
 const Footer = () => {
 
     return (
-        <div>
-            <img alt="daffodils" style={{width:'100vw'}} src={daffodilBorder} />
+        <div style={{textAlign:"center"}}>
+            <img alt="daffodils" style={{ width:"60vw"}} src={daffodilBorder} />
         </div>
     );
 }

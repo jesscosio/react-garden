@@ -18,7 +18,8 @@ export const tabsReducer = () => {
         { name: "Home", value: "home", path: "/"},
         { name: "About", value: "about", path: "/about"},
         { name: "Blog", value: "blog", path: "/blog"},
-        { name: "Gallery", value: "gallery", path: "/gallery"}
+        { name: "Gallery", value: "gallery", path: "/gallery"},
+        { name: "Pay by Venmo", value: "venmo", path: "/venmo"}
     ];
 };
 

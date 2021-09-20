@@ -41,9 +41,12 @@ class BlogPage extends React.Component {
             return <div>Loading...</div>;
         }
         return (
-            <div className="ui ">
+            <div>
                 <Nav tab={{name:"Blog",value:"blog", path:"/blog"}}/>
-                {this.renderList()}
+                <div className="container pt-5">
+                    {this.renderList()}
+                </div>
+                
             </div>
         );
     };

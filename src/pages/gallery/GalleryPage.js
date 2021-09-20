@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { fetchGallery } from "../../actions/GalleryActions";
 import Nav from "../../components/Nav";
@@ -21,7 +21,7 @@ class GalleryPage extends React.Component {
     return (
       <div>
         <Nav tab={{ name: "Gallery", value: "gallery", path: "/gallery" }} />
-        <div className="container pt-5">
+        <div className="container pt-5" style={{marginLeft:"10px", marginRight:"10px"}}>
             <ul className="row" style={{paddingLeft:'0', listStyle:'none'}}>{this.renderGallery()}</ul>
         </div>
       </div>

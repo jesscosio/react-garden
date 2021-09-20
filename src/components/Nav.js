@@ -53,7 +53,7 @@ class Nav extends React.Component {
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"
-            onClick={(ev)=>{ev.preventDefault(); this.setState({menuToggle: !this.state.menuToggle}); console.log(this.state.menuToggle)}}></span>
+            onClick={(ev)=>{ev.preventDefault(); this.setState({menuToggle: !this.state.menuToggle});}}></span>
           </button>
           <div className={`collapse navbar-collapse ${this.state.menuToggle ? 'show': ''}`} id="navbarCollapse">
             <ul className="navbar-nav me-auto mb-2 mb-md-0">

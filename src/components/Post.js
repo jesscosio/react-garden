@@ -15,7 +15,6 @@ class Post extends React.Component {
 export default Post;
 
 const PostContainer = styled.div`
-  width: 100vw;
   height: 30vh;
   padding: 1em;
 `;
