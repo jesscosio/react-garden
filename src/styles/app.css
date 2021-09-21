@@ -11973,4 +11973,40 @@ fieldset:disabled .btn {
     position: absolute;
   }
 }
+
+.fade {
+  /* media queries */
+}
+
+@media (max-width: 768px) {
+  .fade {
+    /* portrait */
+    -webkit-animation: fading-in 1s linear forwards;
+            animation: fading-in 1s linear forwards;
+  }
+}
+
+@media (min-width: 769px) {
+  .fade {
+    opacity: 100% !important;
+  }
+}
+
+@-webkit-keyframes fading-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fading-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 /*# sourceMappingURL=app.css.map */

@@ -2,7 +2,6 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 .navbar {
-   
   z-index: 1050;
   width: 100vw;
 }
@@ -13,3 +12,24 @@
     position: absolute;
   }
 }
+
+.fade {
+       /* media queries */
+  @media (max-width: 768px) {
+    /* portrait */
+    animation: fading-in 1s linear forwards;
+  }
+  @media (min-width: 769px) {
+        opacity: 100% !important;
+}
+    
+}
+
+@keyframes fading-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }

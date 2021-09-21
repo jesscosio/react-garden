@@ -55,7 +55,7 @@ class Nav extends React.Component {
             <span className="navbar-toggler-icon"
             onClick={(ev)=>{ev.preventDefault(); this.setState({menuToggle: !this.state.menuToggle});}}></span>
           </button>
-          <div className={`collapse navbar-collapse ${this.state.menuToggle ? 'show': ''}`} id="navbarCollapse">
+          <div className={`collapse navbar-collapse fade ${this.state.menuToggle ? 'show': ''}`} id="navbarCollapse">
             <ul className="navbar-nav me-auto mb-2 mb-md-0">
               {this.renderedTabs}
             </ul>
