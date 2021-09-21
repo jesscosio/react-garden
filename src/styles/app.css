@@ -11957,4 +11957,20 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+
+.navbar {
+  z-index: 1050;
+  width: 100vw;
+}
+
+.nav-open {
+  /* media queries */
+}
+
+@media (max-width: 768px) {
+  .nav-open {
+    /* portrait */
+    position: absolute;
+  }
+}
 /*# sourceMappingURL=app.css.map */

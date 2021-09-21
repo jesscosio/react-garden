@@ -4,23 +4,17 @@ import BlockQuote from "../../components/BlockQuote";
 import BlockText from "../../components/BlockText";
 import BlockImage from "../../components/BlockImage";
 import quotes from "./Quotes";
-import flowerfield from "../../assets/flowerfield.jpg";
+import bougainvillea from "../../assets/bougainvillea.jpg";
+import "../../styles/about.scss";
 
 const AboutPage = () => {
   return (
     <div>
       <Nav tab={{ name: "About", value: "about", path: "/about" }} />
-      <div
-        className="container"
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          paddingTop: "4em",
-          justifyContent: "center",
-        }}
-      >
+      <div id="about"
+        className="container">
         <BlockText>
-          <BlockImage image={flowerfield} altTxt="flower field" />
+            <BlockImage image={bougainvillea} altTxt="bougainvillea"></BlockImage>
         </BlockText>
         <BlockQuote quotes={quotes}></BlockQuote>
       </div>

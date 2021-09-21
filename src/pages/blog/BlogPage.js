@@ -43,7 +43,7 @@ class BlogPage extends React.Component {
         return (
             <div>
                 <Nav tab={{name:"Blog",value:"blog", path:"/blog"}}/>
-                <div className="container pt-5">
+                <div className="container pt-2">
                     {this.renderList()}
                 </div>
                 

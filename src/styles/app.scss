@@ -1,2 +1,15 @@
 @import "customVariables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+.navbar {
+   
+  z-index: 1050;
+  width: 100vw;
+}
+.nav-open {
+     /* media queries */
+  @media (max-width: 768px) {
+    /* portrait */
+    position: absolute;
+  }
+}

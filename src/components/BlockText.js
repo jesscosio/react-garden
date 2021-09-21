@@ -1,21 +1,12 @@
 import React from "react";
 
-const BlockText = props => {
+const BlockText = (props) => {
   return (
-    <div
-      style={{
-        textAlign: "center",
-        fontWeight: "bolder",
-        fontSize: "larger",
-        fontFamily: "revert",
-        width: "100vw",
-        padding: "1.5em",
-        backgroundColor: "#f4f0ec",
-        color: "grey",
-      }}
+    <div className="block"
     >
-      <div>Welcome</div>
-      <hr />
+      <div className="block-text">
+        Welcome
+      </div>
       {props.children}
     </div>
   );
