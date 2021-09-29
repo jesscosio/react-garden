@@ -11974,6 +11974,26 @@ fieldset:disabled .btn {
   }
 }
 
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.navbar-toggler {
+  border: none;
+  z-index: 9999;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .fade {
   /* media queries */
 }

@@ -13,8 +13,11 @@ const AboutPage = () => {
       <Nav tab={{ name: "About", value: "about", path: "/about" }} />
       <div id="about"
         className="container">
-        <BlockText>
+        <BlockText text="Welcome" styles="block-hero-text">
             <BlockImage image={bougainvillea} altTxt="bougainvillea"></BlockImage>
+        </BlockText>
+        <BlockText >
+          <p className="lead block-text">At the Daffodil Mill, we are dedicated to bringing you the joy of the season with beautiful flowers</p>
         </BlockText>
         <BlockQuote quotes={quotes}></BlockQuote>
       </div>

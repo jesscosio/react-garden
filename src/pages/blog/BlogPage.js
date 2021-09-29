@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from '../../components/Nav';
 import { fetchPosts } from '../../actions';
 import { connect } from 'react-redux';
-import Post from '../../components/Post';
+import PostPreview from '../../components/PostPreview';
 import { Link } from 'react-router-dom';
 
 
@@ -27,9 +27,9 @@ class BlogPage extends React.Component {
         return (this.props.posts).map( post => {
             return (
                 <div key={post.id}>
-                    <Post title={post.title} 
+                    <PostPreview title={post.title} 
                         content={post.post_text}>
-                    </Post>
+                    </PostPreview>
                     {this.renderAdmin(post)}
                 </div>
             

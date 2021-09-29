@@ -12,6 +12,21 @@
     position: absolute;
   }
 }
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+.navbar-toggler {
+  border: none;
+  z-index: 9999;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar > .container-fluid {
+  justify-content: center;
+}
 
 .fade {
        /* media queries */

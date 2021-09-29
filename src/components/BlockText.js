@@ -2,10 +2,9 @@ import React from "react";
 
 const BlockText = (props) => {
   return (
-    <div className="block"
-    >
-      <div className="block-text">
-        Welcome
+    <div className="block mb-2" >
+      <div className={props.styles}>
+        {props.text}
       </div>
       {props.children}
     </div>

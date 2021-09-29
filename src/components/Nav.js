@@ -42,7 +42,7 @@ class Nav extends React.Component {
     // className="ui top attached tabular menu">{this.renderedTabs}</div>;
     return (
       <nav className={`navbar ${this.state.menuToggle ? 'nav-open': ''} navbar-expand-md navbar-light bg-light`} >
-        <div className="container-fluid">
+        <div className="container-fluid fade">
           <button
             className="navbar-toggler"
             type="button"

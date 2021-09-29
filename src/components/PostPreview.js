@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-class Post extends React.Component {
+class PostPreview extends React.Component {
 
     render() {
         return (
@@ -12,7 +12,7 @@ class Post extends React.Component {
     }
 }
 
-export default Post;
+export default PostPreview;
 
 const PostContainer = styled.div`
   height: 30vh;

@@ -2,7 +2,7 @@ import React from 'react';
 import _ from 'lodash';
 import { fetchPost, editPost } from '../../actions';
 import { connect} from 'react-redux';
-import Post from "../../components/Post";
+import PostPreview from "../../components/PostPreview";
 import PostForm from '../../components/PostForm';
 
 
@@ -22,9 +22,9 @@ class EditPostPage extends React.Component {
     renderPost() {
         if(this.props.post) {
             return (
-                <Post title={this.props.post.title} 
+                <PostPreview title={this.props.post.title} 
                         content={this.props.post.post_text}>
-                </Post>
+                </PostPreview>
             );
         } else {
             return <div>Loading post...</div> ;

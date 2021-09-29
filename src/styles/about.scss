@@ -29,7 +29,7 @@
   }
 }
 
-.block-text {
+.block-hero-text {
   font-size: xx-large;
   margin-right: 0.5em;
   border-right: solid 1px #ccc;
@@ -40,4 +40,8 @@
     /* portrait */
     padding-right: 0.5em;
   }
+}
+
+.block-text {
+  padding: 1.5em;
 }
