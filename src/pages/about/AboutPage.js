@@ -16,8 +16,8 @@ const AboutPage = () => {
         <BlockText text="Welcome" styles="block-hero-text">
             <BlockImage image={bougainvillea} altTxt="bougainvillea"></BlockImage>
         </BlockText>
-        <BlockText >
-          <p className="lead block-text">At the Daffodil Mill, we are dedicated to bringing you the joy of the season with beautiful flowers</p>
+        <BlockText>
+          <p className="lead" style={{width:"100%"}}>At the Daffodil Mill, we are dedicated to capturing the season's beauty using flowers</p>
         </BlockText>
         <BlockQuote quotes={quotes}></BlockQuote>
       </div>
